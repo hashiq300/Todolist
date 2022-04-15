@@ -4,7 +4,7 @@ import Input from './components/Input'
 import TodoList from './components/TodoList'
 
 function App() {
-  const [todos,setTodos] = useState(JSON.parse(localStorage.getItem("TODOS")))
+  const [todos,setTodos] = useState(JSON.parse(localStorage.getItem("TODOS"))== null? []:JSON.parse(localStorage.getItem("TODOS")))
   const [input,setInput] = useState("")
   useEffect(() => {
       localStorage.setItem("TODOS",JSON.stringify(todos))

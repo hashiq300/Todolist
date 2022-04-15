@@ -22,8 +22,8 @@ function Input({setTodos,todos, input, setInput}) {
             }
             input[type=text]{
                 font-size: 1rem;
-                margin-right:40px;
-                padding: 5px 40px;
+                margin-right:7%;
+                padding: 5px 5%;
 
             }
             input[type=submit]{
